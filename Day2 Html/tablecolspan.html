@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Table Rowspan Colspan</title>
+    <style>
+        table  th tr td {border-collapse: collapse}
+        table  th tr td { border: 1px solid red}
+    </style>
+</head>
+<body>
+    <table align="center" width="50%" border="1">
+        <thead>
+            <th>Name</th>
+            <th>Address1</th>
+            <th>Address2</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ajay</td>
+                <td>Hyderabad</td>
+                <td>Secunderabad</td>
+            </tr>
+            <tr>
+                <td>Vijay</td>
+                <td colspan="2">Vishakapatnam</td>
+            </tr>
+            <!-- Rowspan -->
+             <tr>
+                <td rowspan="2">Hari</td>
+                <td>Hyderabad</td>
+                <td>Secunderabad</td>
+            </tr>
+            <tr>
+                <td>Vizag</td>
+                <td>Vijaywada</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+<!-- colspan is discuused here -->
+ <!-- Rowspan is also similar to colspan -->

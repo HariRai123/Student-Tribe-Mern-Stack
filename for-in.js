@@ -1,0 +1,10 @@
+//used for objects
+let student={
+    name :"Hari",
+    age:"22",
+    cgpa:"7.5",
+    isPass:"true"
+}
+for(let i in student){
+    console.log(i +"="+ student[i]);
+}

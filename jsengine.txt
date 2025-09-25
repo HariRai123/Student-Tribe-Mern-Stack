@@ -1,0 +1,11 @@
+Compoemts of js engine
+Parser
+Semantic Analyser
+Bytecode Generator
+Interpreter eg Ignition in V8
+Profiler/Hot Code Detector
+JIT Compiler eg : Turbofan in V8
+Runtime/Built in API'
+Garbage Collector
+Optimizer/Deoptimizer
+javascript is an single thread execution.

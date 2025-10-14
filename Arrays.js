@@ -20,3 +20,17 @@ for(let val of prices)
     i++;
 }
 console.log(`Prices of an item after 10% discount is ${prices}`)
+// Creating an array
+// let x=[]
+// let x=[values]
+// let x= new Array(no of elements)
+function factorial(n)
+{
+  let fact=1;
+  for(let i=1;i<=n;i++)
+  {
+    fact=fact*i;
+  }
+  return fact;
+}
+console.log(factorial(6))

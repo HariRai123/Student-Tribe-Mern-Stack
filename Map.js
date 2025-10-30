@@ -17,7 +17,7 @@ console.log(map.size)
 console.log(map.get("reethika@gmail.com"))
 console.log(map.has("harirai@gmail.com"))
 console.log(map.has("hari@gmail.com"))
-//console.log(map.delete("Tilak@gmail.com"));
+console.log(map.delete("Tilak@gmail.com"));
 console.log(map)
 let key=map.keys()
 for(let i of key)

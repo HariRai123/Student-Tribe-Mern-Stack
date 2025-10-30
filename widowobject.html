@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="b1" onclick="abc()">Click Me </button>
+    <button id="b2" onclick="xyz()">Screen Resolution</button>
+    <script>
+        function abc(){
+            window.open("https://www.amazon.com","","width:400 ,height:300")
+            // window.open("reference link","name","width,height")
+        }
+        function xyz()
+        {
+            alert(`Height ${window.screen.height}`)
+        }
+    </script>
+</body>
+</html>

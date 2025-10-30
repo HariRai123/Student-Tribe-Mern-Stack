@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script>
+function checkMessage(t1)
+{
+document.getElementById("t1Message").hidden=!(t1.value.length==0);
+}
+function validate()
+{
+
+}
+function getResults(symbol)
+{
+switch(symbol)
+{
+    case "+":
+        t3.value=parseInt(t1.value)+parseInt(t2.value);
+        break;
+    case "-":
+          t3.value=parseInt(t1.value)+parseInt(t2.value);
+         break;
+    case "*":
+          t3.value=parseInt(t1.value)+parseInt(t2.value);
+         break;
+    case "/":
+          t3.value=parseInt(t1.value)+parseInt(t2.value);
+          break;
+    default:
+        console.log("Invalid Input")
+    }
+
+}
+</script>
+<body>
+    <table>
+        <tr>
+            <th>
+                First Number
+            </th>
+            t
+        </tr>
+    </table>
+</body>
+</html>

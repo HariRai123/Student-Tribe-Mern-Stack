@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forward Backward Button</title>
+</head>
+<body>
+    <button id="b1" onclick="forward()">forward</button>
+    <button id="b2" onclick="backward()">backward</button>
+    <script>
+        function forward()
+        {
+            window.history.forward();
+        }
+        function backward()
+        {
+            window.history.go(-2);
+        }
+    </script>
+</body>
+</html>

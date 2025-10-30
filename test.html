@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR</title>
+</head>
+<body>
+  <select name="" id="original" size="7" multiple>
+    <option value="apple">Apple</option>
+    <option value="Banana">Banana</option>
+    <option value="CustardApple">CustardApple</option>
+    <option value="DragonFruit">DragonFruit</option>
+    <option value="Fig">Fig</option>
+    <option value="Guava">Guava</option>
+    <option value="JackFruit">JackFruit</option>
+  </select>  
+  <input type="button" value=">" onclick="addItem(original,copy,original.selectedIndex)">
+  <input type="button" value=">>" onclick="addAllItems(original,copy)">
+  <select name="" id="copy" multiple size="7"></select>
+
+</body>
+<script >
+function addItem(list1,list2,itemIndex)
+{
+optionItem=document.createElement("option")
+optionItem.value=list1[itemIndex].value;
+optionItem.textContent=list1[itemIndex].value;
+list2.add(optionItem);
+list1.remove(itemIndex)
+remove(list1)
+}
+function addAllItems(list1,list2)
+{
+  optionItem=document.createElement("option")
+  
+  for(let i of list1)
+{
+  list2.add(i.value)
+}
+remove(list1)
+}
+</script>
+</html>

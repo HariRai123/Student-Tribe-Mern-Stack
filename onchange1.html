@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hello welcome to student tribe</p>
+    <select name="" id="" onchange="changeStyles(this ,p1)">
+        <option value="arial">Arial</option>
+        <option value="times new roman">Times New Roman</option>
+        <option value="consolas">Consolas</option>
+        <option value="cooper">Cooper</option>
+    </select>
+    <input type="checkbox" name="" id="" onchange="applyBold(this,p1)">Bold
+    <input type="checkbox" name="" id="" onchange="applyItalic(this,p1)">Italic
+    
+</body>
+<script>
+    function changeStyles(fontStyles,para)
+    {
+        para.style.fontFamily=fontStyles.value;
+    }
+    function applyBold(bold,para)
+    {
+        if(bold.checked)
+    {
+        para.style.fontWeight='bold';
+    }
+    else{
+        para.style.fontWeight='normal'
+    }
+    }
+    function applyItalic(italic,para)
+    {
+        if(italic.checked)
+        {
+            para.style.fontStyle='italic'
+        }
+        else{
+            para.style.fontStyle='normal'
+        }
+    }
+
+</script>
+</html>

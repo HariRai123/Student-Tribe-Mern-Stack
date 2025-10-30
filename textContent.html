@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+          function hii(){
+            alert("hii")
+        }
+        function hello(){
+            alert("hello")
+        }
+        //creating an button element
+        b=document.createElement("button");
+        //appending the button 
+        document.body.append(b);
+        b.textContent="dynamically added";
+        b.addEventListener('click',hii)
+        b.addEventListener('click',hello)
+       setTimeout(() => b.removeEventListener('click',hii),10000)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
